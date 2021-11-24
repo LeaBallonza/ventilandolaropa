@@ -1,18 +1,18 @@
 import React from "react";
-
+import CartWidget from "../CartWidget/CartWidget";
 
 const NavBar = () => {
   return (
     <div>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary ">
-        <div class="container justify-content-between ">
-          <a class="navbar-brand text-light " href="#">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-primary ">
+        <div className="container justify-content-between ">
+          <a className="navbar-brand text-light " href="/#">
             <span>
               <h1>Ventilando La Ropa</h1>
             </span>
           </a>
           <button
-            class=" navbar-toggler text-light btn btn-primary  "
+            className=" navbar-toggler text-light btn btn-primary  "
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -20,23 +20,25 @@ const NavBar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon text-light"></span>
+            <span className="navbar-toggler-icon text-light"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-            <div class=" navbar-nav ">
-              <a class="nav-link active text-light " aria-current="page" href="#">
+          <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div className=" navbar-nav ">
+              <a className="nav-link active text-light " aria-current="page" href="/#">
                 <h6>
                 PRODUCTOS
                 </h6>
               </a>
-              <a class="nav-link active text-light" aria-current="page" href="#">
+              <a className="nav-link active text-light" aria-current="page" href="/#">
               <h6>
                 CONTACTO
                 </h6>
               </a>
             </div>
+            <CartWidget />
           </div>
         </div>
+        
       </nav>
     </div>
   );
