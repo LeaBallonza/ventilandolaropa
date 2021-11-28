@@ -12,7 +12,7 @@ const NavBar = () => {
             </span>
           </a>
           <button
-            className=" navbar-toggler text-light btn btn-primary  "
+            className=" navbar-toggler text-light btn btn-primary"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -20,9 +20,9 @@ const NavBar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon text-light"></span>
+            <span className="navbar-toggler-icon "></span>
           </button>
-          <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className=" navbar-nav ">
               <a className="nav-link active text-light " aria-current="page" href="/#">
                 <h6>
@@ -30,15 +30,14 @@ const NavBar = () => {
                 </h6>
               </a>
               <a className="nav-link active text-light" aria-current="page" href="/#">
-              <h6>
-                CONTACTO
+                <h6>
+                  CONTACTO
                 </h6>
               </a>
-            </div>
-            <CartWidget />
+              <CartWidget />
           </div>
-        </div>
-        
+            </div>         
+        </div>        
       </nav>
     </div>
   );
