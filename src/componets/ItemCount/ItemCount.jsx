@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 
 
-const ItemCount = ({stock = 5, initial, onAdd}) => {
+const ItemCount = ({stock = 10, initial, onAdd}) => {
 
     const [state, setState] = useState({
         stock:stock,
