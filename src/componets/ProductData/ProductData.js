@@ -4,7 +4,7 @@ const ProductData = [
     {
         id:1,
         productName: "Pantalon Lila",
-        description: "Pantalón lila con cierre en la parte de abajo, Tipo tela de avión, Talle S",
+        description: "Pantalón lila con cierre en la parte de abajo Tipo tela de avión, Talle S",
         price: 1000,
         currency: "$",
         img: "multimedia/1.jpeg",
@@ -50,5 +50,15 @@ export  const getProducts =  (() => {
    
 });
 
+export  const getItem =  (() => {
+
+    return new Promise ((resolve, reject)=> {
+
+        setTimeout(() => {
+            resolve (ProductData[0]);
+        }, 3000)
+    })
+   
+});
 
 export default ProductData;

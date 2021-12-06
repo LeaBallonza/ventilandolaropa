@@ -6,7 +6,7 @@ const Item = ({ product }) => {
   return (
     <div className="container ">
       <div className="card " style={{ width: "18rem" }}>
-        <img src={product.img} class="card-img-top" alt="imagen"/>
+        <img src={product.img} className="card-img-top" alt="imagen"/>
         <div className="card-body">
           <h5 className="card-title" style={{ color: "black" }}>
             {product.productName}
@@ -16,7 +16,7 @@ const Item = ({ product }) => {
             {product.price}
           </p>
           <a href="/#" className="btn btn-primary">
-            Go somewhere
+            Detalles
           </a>
         </div>
       </div>
