@@ -1,13 +1,14 @@
 import React from "react";
-//import ProductData from "../ProductData/ProductData";
-//import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
 
 const Item = ({ product }) => {
+
+  
   return (
-    <div className="container ">
-      <div className="card " style={{ width: "18rem" }}>
-        <img src={product.img} className="card-img-top" alt="imagen"/>
-        <div className="card-body">
+    <div className="col ">
+      <div className="card  " style={{ width: "18rem", marginBottom:"5rem"}}>
+        <img src={`../../../${product.img}`} className="card-img-top" alt="imagen"/>
+        <div className="card-body text-center">
           <h5 className="card-title" style={{ color: "black" }}>
             {product.productName}
           </h5>
@@ -15,13 +16,16 @@ const Item = ({ product }) => {
             {product.currency}
             {product.price}
           </p>
-          <a href="/#" className="btn btn-primary">
+          <Link to={`/detail/${product.id}`} className="btn btn-primary text-light">
             Detalles
-          </a>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
+
+
 export default Item;
+ 

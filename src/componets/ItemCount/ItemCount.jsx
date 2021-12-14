@@ -21,8 +21,8 @@ const removeItem =() =>{
 
 }
     return (
-        <div>
-            <div className="btn-group btn-group-lg" role="group" aria-label="Basic example">
+        <div  >
+            <div className="btn-group btn-group-lg"  role="group" aria-label="Basic example">
             <button type="button" className="btn btn-primary  text-light" onClick={()=>removeItem()}><strong>-</strong></button>
             <button type="button" className="btn btn-primary text-light">{state.initial}</button>
             <button type="button" className="btn btn-primary text-light" onClick={()=>addItem()}><strong>+</strong></button>
