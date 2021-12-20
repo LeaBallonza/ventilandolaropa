@@ -25,8 +25,6 @@ const NavBar = () => {
               <h1>Ventilando La Ropa</h1>
             </span>
           </Link>
-          
-          
           <button
             className=" navbar-toggler text-light btn btn-primary"
             type="button"
@@ -52,7 +50,6 @@ const NavBar = () => {
                 </ul>
               </li>
             <CartWidget/>
-              
             </div>
           </div>
         </div>

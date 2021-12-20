@@ -7,6 +7,7 @@ const ProductData = [
         currency: "$",
         img: "multimedia/1.jpeg",
         category: "pantalones",
+        stock: 5
     },
     {
         id:2,
@@ -16,6 +17,7 @@ const ProductData = [
         currency: "$",
         img: "multimedia/2.jpeg",
         category: "camisas",
+        stock: 6
     },
     {
         id:3,
@@ -25,6 +27,7 @@ const ProductData = [
         currency: "$",
         img: "multimedia/3.jpeg",
         category: "remeras",
+        stock: 7
     },
     {
         id:4,
@@ -34,6 +37,7 @@ const ProductData = [
         currency: "$",
         img: "multimedia/4.jpeg",
         category: "remeras",
+        stock: 8
     }
 
 ]
