@@ -1,17 +1,42 @@
 import {React, useState} from 'react'
+import { Link } from "react-router-dom";
 
 
 
 
-const ItemCount = ({ stock, initial = 1, onAdd}) => {
+const ItemCount = ({ stock, initial}) => {
 
+    const [count, setCount] = useState(0);
 
+    const onAdd = (quantity) => {
+    
+        setCount(quantity)
 
-    const [quantity, setQuantity] = useState(initial);
-
+    }
     
     
-const addItem = () =>{
+
+    const InputCompra = () => {
+
+    return(
+        <Link to={`/Cart`} type="button" className="btn-lg btn btn-primary text-light"> Finalizar Compra </Link>
+    )
+    }
+
+    const InputCarrito = () => {
+
+        return(
+           
+                <button type="button" className=" btn-lg btn btn-primary text-light" onClick={()=>onAdd(quantity)}>Agregar al carrito</button>
+           
+        )
+        }
+
+    
+
+     const [quantity, setQuantity] = useState(initial);
+
+    const addItem = () =>{
 
     if(quantity < stock) {
         setQuantity(quantity+1)
@@ -31,16 +56,15 @@ const removeItem =() =>{
 
 
     return (
-        <div  >
+        
             <div className="btn-group btn-group-lg"  role="group" aria-label="Basic example">
-            <button type="button" className="btn btn-primary  text-light" onClick={()=>removeItem()}><strong>-</strong></button>
-            <button type="button" className="btn btn-primary text-light">{quantity}</button>
-            <button type="button" className="btn btn-primary text-light" onClick={()=>addItem()}><strong>+</strong></button>
-            <button type="button" className="btn btn-primary text-light" onClick={()=>onAdd(quantity)}><strong>Agregar al carrito</strong></button>
-            {}
-             </div>
-            
-        </div>
+                <button type="button" className="btn btn-primary  text-light" onClick={()=>removeItem()}><strong>-</strong></button>
+                <button type="button" className="btn btn-primary text-light">{quantity}</button>
+                <button type="button" className="btn btn-primary text-light" onClick={()=>addItem()}><strong>+</strong></button>
+                {quantity === count ?  <InputCompra/>  : <InputCarrito/> }
+            </div>
+           
+        
     )
 }
 
