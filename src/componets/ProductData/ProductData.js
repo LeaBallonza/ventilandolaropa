@@ -80,6 +80,4 @@ export  const getProductsByCategories =  () => {
    
 };
 
-
-
 export default ProductData;

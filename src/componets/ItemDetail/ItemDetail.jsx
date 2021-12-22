@@ -8,11 +8,7 @@ import ItemCount from '../ItemCount/ItemCount'
 
 const ItemDetail = ({ detail }) => {
 
-  
-
-    
-
-    return (
+      return (
         <div className="d-flex justify-content-center ">
             <div className="card mb-3" style={{ marginTop: "10rem" }}>
                 <img src={`../../../${detail?.img}`} className="card-img-top" alt="imagen" />
@@ -21,15 +17,10 @@ const ItemDetail = ({ detail }) => {
                     <p className="card-text" style={{ color: "black" }}> {detail?.description}</p>
                     <p className="card-text" style={{ color: "black" }}>{detail?.currency}
                         {detail?.price}</p>
-                        <p className="card-text" style={{ color: "black" }}> {detail?.stock}</p>
-                        
-                        
-                </div>
-                <ItemCount stock={detail?.stock} initial={1}/> 
-               
-           
+                        <p className="card-text" style={{ color: "black" }}> {detail?.stock}</p>   
+                        <ItemCount stock={detail?.stock} initial={1}/> 
+                </div>  
             </div>
-            
         </div>
     )
 }

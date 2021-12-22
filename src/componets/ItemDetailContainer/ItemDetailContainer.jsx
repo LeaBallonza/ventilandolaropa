@@ -8,8 +8,6 @@ const ItemDetailContainer = () => {
     const [detail, setDetail] = useState([])
     const {paramId} = useParams()
 
-    
-
     useEffect(() => {
         getProductsById(paramId).then(item => {
             setDetail(item)
@@ -22,8 +20,6 @@ const ItemDetailContainer = () => {
             
         })
     }, [paramId])
-
-    
 
     return (
         <div>
