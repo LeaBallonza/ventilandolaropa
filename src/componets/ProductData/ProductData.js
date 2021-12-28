@@ -1,7 +1,7 @@
 const ProductData = [
     {
         id:1,
-        productName: "Pantalon Lila",
+        name: "Pantalon Lila",
         description: "Pantalón lila con cierre en la parte de abajo Tipo tela de avión, Talle S",
         price: 1000,
         currency: "$",
@@ -11,7 +11,7 @@ const ProductData = [
     },
     {
         id:2,
-        productName: "Camisa con rosas",
+        name: "Camisa con rosas",
         description: "Camisa azul basica con bordado de rosas en el cuello, La tela se amolda al cuerpo, Talle S",
         price: 500,
         currency: "$",
@@ -21,7 +21,7 @@ const ProductData = [
     },
     {
         id:3,
-        productName: "Remera red square",
+        name: "Remera red square",
         description: "Tela abrigada, Talle S",
         price: 400,
         currency: "$",
@@ -31,7 +31,7 @@ const ProductData = [
     },
     {
         id:4,
-        productName: "Remeras flores cruzadas",
+        name: "Remeras flores cruzadas",
         description: "Remera manga larga con estampado de Basquiat,Talle S",
         price: 300,
         currency: "$",

@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 const Item = ({ product }) => {
 
-  
+ 
   return (
     <div className="col ">
       <div className="card  " style={{ width: "18rem", marginBottom:"5rem"}}>
         <img src={`../../../${product.img}`} className="card-img-top" alt="imagen"/>
         <div className="card-body text-center">
           <h5 className="card-title" style={{ color: "black" }}>
-            {product.productName}
+            {product.name}
           </h5>
           <p className="card-text" style={{ color: "black" }}>
             {product.currency}
